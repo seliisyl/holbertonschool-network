@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Listens on port 98 on localhost.
+
+# Port to listen on
+PORT=98
+
+# Listen on localhost and port 98
+echo "Listening on localhost:$PORT..."
+
+# Use netcat to listen on the specified port and handle incoming connections
+nc -l 127.0.0.1 $PORT
